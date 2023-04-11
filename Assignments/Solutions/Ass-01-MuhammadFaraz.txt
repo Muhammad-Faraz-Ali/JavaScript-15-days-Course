@@ -1,0 +1,82 @@
+//Question-01-Greater number
+
+let num1 = +prompt("Enter number 1:");
+let num2 = +prompt("Enter number 2:");
+if (num1 > num2) {
+  console.log(num1 + " is greater");
+} else if (num1 < num2) {
+  console.log(num2 + " is greater");
+} else {
+  console.log(num1 + " and " + num2 + " both are same!");
+}
+
+//Question-02-+ve or -ve sign
+
+let num = +prompt("Please enter a number ");
+num >= 0 ? console.log("sign is +") : console.log("sign is -");
+
+//Question-03-Greater number out of 5 numbers
+
+let num1 = +prompt("Enter number 1:");
+let num2 = +prompt("Enter number 2:");
+let num3 = +prompt("Enter number 3:");
+let num4 = +prompt("Enter number 4:");
+let num5 = +prompt("Enter number 5:");
+let greater;
+if (num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5) {
+  greater = num1;
+} else if (num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5) {
+  greater = num2;
+} else if (num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5) {
+  greater = num3;
+} else if (num4 > num1 && num4 > num2 && num4 > num3 && num4 > num5) {
+  greater = num4;
+} else {
+  greater = num5;
+}
+console.log(greater + " is greater than all.");
+
+//Question-04-Even-Odd
+for (let i = 0; i <= 15; i++) {
+  i % 2 === 0 ? console.log(i + " is even") : console.log(i + " is odd");
+}
+
+//Question-05-Avg Marks
+
+let subOneMarks = 90,
+  subTwoMarks = 90,
+  subThreeMarks = 89;
+let avgMarks = (subOneMarks + subTwoMarks + subThreeMarks) / 3;
+if (avgMarks < 60) {
+  console.log("Grade is F");
+} else if (avgMarks < 70) {
+  console.log("Grade is D");
+} else if (avgMarks < 80) {
+  console.log("Grade is C");
+} else if (avgMarks < 90) {
+  console.log("Grade is B");
+} else if (avgMarks <= 100) {
+  console.log("Grade is A");
+}
+
+//Question-06-FizzBuzz
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 == 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 == 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  }
+}
+
+// Question - 07 - Pattern;
+for (let i = 1; i <= 5; i++) {
+  let stars = "";
+  for (let j = 1; j <= i; j++) {
+    stars += "*";
+  }
+  console.log(stars);
+}
+// //
